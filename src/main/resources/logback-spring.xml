@@ -40,7 +40,11 @@
         <logger name="org.hibernate.SQL" level="DEBUG"/>
         <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>
 
-        <root level="DEBUG">
+        <logger name="org.apache.kafka" level="WARN"/>
+        <logger name="org.springframework.kafka" level="INFO"/>
+        <logger name="com.netflix.discovery" level="WARN"/>
+        <logger name="org.springframework.cloud.netflix.eureka" level="WARN"/>
+        <root level="INFO">
             <appender-ref ref="DEV_CONSOLE"/>
             <appender-ref ref="DEV_FILE"/>
         </root>
